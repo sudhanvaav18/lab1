@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+document.write('<h1 align="middle">Squares,Cubes,Squareroot and Cuberoot of the numbers from 0 to 50</h1>');
+document.write('<center><table width="30%" border="1" bgcolor="white">');
+document.write( "<tr> <th>Number</th><th>Square</th><th>Cube</th><th>Squareroot</th><th>Cuberoot</th></tr>");
+for (var n=0; n<=50; n++)
+{
+document.write("<tr><td>"+n+"</td><td>"+ n*n + "</td><td>" + n*n*n + "</td><td>" + Math.sqrt(n) + "</td><td>" + Math.cbrt(n) + "</td></tr>");
+}
+document.write("</table>");
+</script>
+<style>
+	table{
+	background-color: white;
+	border: 2px red;
+}
+tr:nth-child(odd){
+	background-color: blue;
+}
+th,td{
+	border: none;
+}
+tr:hover{
+	background-color: blue;
+}
+</style>
+</head>
+<body style="background-color: violet;"></body>
+</html>
